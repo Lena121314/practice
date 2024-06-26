@@ -1,0 +1,261 @@
+* {
+    --logo-bg-color: #556064;
+    --nav-links-bg-color: #556064;
+
+    --logo-text-color: #d4c0aa;
+    --nav-links-text-color: #9f9488;
+
+    --header-height: 50px;
+    --footer-height: 500px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    height: 100dvh;
+    padding-top: var(--header-height);
+}
+
+section .section-title {
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--logo-text-color);
+}
+
+.header {
+    width: 100%;
+    height: var(--header-height);
+
+    position: fixed;
+
+    background-color: rgba(0 0 0 / .5);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    column-gap: 68%;
+    padding-inline: 20px;
+}
+
+.logo {
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: var(--logo-text-color);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 45px;
+}
+
+.nav-link {
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+
+    color: var(--nav-links-text-color);
+}
+
+
+.first-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+    ), url("/src/img/header-img.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.first-block-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 50%;
+
+    text-align: center;
+}
+
+.first-block-content .title {
+    font-size: 38px;
+    font-weight: 600;
+
+    color: var(--logo-text-color);
+}
+
+.first-block-content .subtitle {
+    font-size: 28px;
+    color: var(--nav-links-text-color);
+}
+
+.two-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #6b7e85;
+}
+
+.two-block-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.two-block-image {
+    display: flex;
+    justify-content: center;
+}
+
+.two-block-text {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    color: var(--logo-text-color);
+}
+
+.three-block {
+    background-color: #556064;
+
+    display: flex;
+    justify-content: center;
+}
+
+.three-block-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5em;
+
+    margin: 0 auto;
+}
+
+.card {
+    width: 380px;
+    height: 680px;
+    padding-block: 35px;
+    background-color: #234a56;
+}
+
+.card-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.card-image {
+    max-width: 250px;
+    max-height: 185px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 185px;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-inline: 25px;
+}
+
+.card-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.card-description-list {
+
+}
+
+.card-description-item {
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-description-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.card-description-item::before {
+    content: "•";
+    margin-right: 10px;
+}
+
+
+.footer {
+    width: 100%;
+    height: var(--footer-height);
+
+    padding: 50px;
+
+    display: flex;
+
+    background-color: rgb(44, 44, 44);
+}
+
+.footer .title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.footer .phone,
+.footer .email {
+    font-size: 20px;
+}
