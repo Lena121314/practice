@@ -107,7 +107,7 @@ section .section-title {
     background: linear-gradient(
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
-    ), url("/src/img/header-img.png") no-repeat center center fixed;
+    ), url("../img/header-img.png") no-repeat center center fixed;
     background-size: cover;
 }
 
